@@ -1,0 +1,111 @@
+body {
+    background: #ffffff;
+    color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    margin: 0;
+    min-width: 1000px;
+}
+
+#header {
+    background: url('../images/header-bg.gif') #f5f8f7;
+    border-bottom: 3px solid #005984;
+    width: 100%;
+}
+
+#header .slogan {
+    color: green;
+    font-size: 13px;
+    margin-top: 17px;
+    text-align: center;
+    width: 230px;
+}
+
+#header .site-name {
+    color: #005984;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 230px;
+}
+
+#header .tracker {
+    text-align: center;
+    text-transform: uppercase;
+    width: 230px;
+    float: left;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#header .tracker a {
+    border-bottom: 1px dashed;
+}
+
+#site-info {
+    width: 250px;
+    float: left;
+}
+
+#navigationfull {
+    margin-top: 5px;
+}
+
+#navigationfull .primary {
+
+}
+
+#navigationfull .primary ul {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+#navigationfull .primary ul li {
+    float: left;
+}
+
+#navigationfull .primary ul li a {
+    border-right: 1px solid #f7f9f9;
+    color: #005984;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 20px 10px 20px;
+    font-size: 15px;
+}
+
+.navbar-header .navbar-toggle {
+    background-color: #555;
+    background-image: linear-gradient(to top, #4d4d4d, #666);
+    border: medium none;
+    border-radius: 0;
+    color: #fff;
+    height: 51px;
+    left: 0;
+    margin: -1px 0 0;
+    min-width: 45px;
+    position: absolute;
+    top: 0;
+}
+
+
+
+
+a {
+    color: #005984 !important;
+    text-decoration: none;
+}
+a:link {
+    color: #005984;
+    text-decoration: none;
+}
+
+a:hover {
+    color: green !important;
+    text-decoration: none !important;
+}
