@@ -79,14 +79,65 @@ body {
     font-size: 15px;
 }
 
-.navbar-header .navbar-toggle {
-    background-color: #555;
-    background-image: linear-gradient(to top, #4d4d4d, #666);
+#navigationfull .responsive ul {
+    position: relative;
+}
+
+#navigationfull .responsive ul li{
+    float: none;
+    display: inline;
+}
+
+#navigationfull .responsive ul li a{
+    display: block;
+    text-align: left;
+}
+
+.mobile-site-info {
+    height: 42px;
+}
+
+.slogan-mobile {
+    color: green !important;;
+    font-size: 13px;
+    text-align: center;
+    margin-left: 45px;
+    width: 230px;
+    display: block;
+}
+
+.site-name-mobile {
+    color: #005984;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 45px;
+    width: 230px;
+    display: block;
+}
+
+#menu-toggle {
+    background-color: #005984;
+    /*background-image: linear-gradient(to top, #4d4d4d, #666);*/
     border: medium none;
     border-radius: 0;
     color: #fff;
     height: 51px;
     left: 0;
+    margin: -1px 0 0;
+    min-width: 45px;
+    position: absolute;
+    top: 0;
+}
+
+#user-toggle {
+    background-color: #005984;
+    border: medium none;
+    border-radius: 0;
+    color: #fff;
+    height: 51px;
+    right: 0 !important;
     margin: -1px 0 0;
     min-width: 45px;
     position: absolute;

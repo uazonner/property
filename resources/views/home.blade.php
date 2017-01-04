@@ -29,11 +29,18 @@
         <nav id="navigationfull">
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <button type="button" id="menu-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                         <span class="sr-only">Toggle navigation</span>
                         <i class="fa fa-bars"></i>
                     </button>
-                    <a id="ar-brand" class="navbar-brand hidden-lg hidden-md hidden-sm navbar-dark" href="#">Artificial <span>Reason</span></a>
+                    <div class="mobile-site-info">
+                        <a class="slogan-mobile hidden-lg hidden-md hidden-sm" href="#">Недвижимость Украины</a>
+                        <a class="site-name-mobile hidden-lg hidden-md hidden-sm" href="#">Real.kh.ua</a>
+                    </div>
+                    <button type="button" id="user-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="fa fa-user-o"></i>
+                    </button>
                 </div>
 
 
