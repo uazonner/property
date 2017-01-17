@@ -21,56 +21,44 @@
 </head>
 <body>
 <header>
-    <!-- Site info -->
     <div class="container">
-        <div class="site-info">
-            <div class="slogan">Недвижимость Украины</div>
-            <div class="site-name"><a href="#">Real.kh.ua</a></div>
-        </div>
-    </div>
-    <!-- Navigation -->
-    <nav>
-        <div class="container">
+        <div class="header">
+            <div class="site-info">
+                <div class="slogan">Недвижимость Украины</div>
+                <div class="site-name"><a href="#">Real.kh.ua</a></div>
+            </div>
+
             <div class="tracker">
                 <a href="#"><i class="fa fa-newspaper-o" aria-hidden="true"></i>
                     2 Апреля 2017, 20:46
                 </a>
             </div>
-
-            <div class="navigation">
-
-               {{-- <a id='toggle-menu' class="visible-xs visible-sm" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>--}}
-
-                <ul id="menu" class="hidden-xs hidden-sm responsive-menu">
-                    <li class="first active"><a href="#">Новостройки</a></li>
-                    <li><a href="#">Застройщики</a></li>
-                    <li><a href="#">Спецпредложения</a></li>
-                    <li class="last"><a href="#">Аналитика</a></li>
-                </ul>
-            </div>
-
-
         </div>
-        {{--<!-- Mobile Nav -->
-        <div class="navigation-mobile visible-xs">
-            <div class="site-info-mobile">
-                <a class="slogan-mobile" href="#">Недвижимость Украины</a>
-                <a class="site-name-mobile" href="#">Realty.com.ua</a>
+
+        <div class="nav">
+            <div class="row-top">
+                <div class="secondary-menu">
+                    <ul id="user-menu">
+                        <li class="first"><a href="#">Личный кабинет</a></li>
+                        <li><a href="#">Регистрация</a></li>
+                    </ul>
+                </div>
+                <div class="search hidden-xs hidden-sm responsive-menu">
+                    Здесь будет поиск
+                </div>
             </div>
-
-            <button type="button" id="menu-toggle" class="navbar-toggle" data-toggle="collapse"
-                    data-target="#bs-exampl2e">
-                <span class="sr-only">Toggle navigation</span>
-                <i class="fa fa-bars" aria-hidden="true"></i>
-            </button>
-
-            <button type="button" id="user-toggle" class="navbar-toggle" data-toggle="collapse"
-                    data-target="#bs-example">
-                <span class="sr-only">Toggle navigation</span>
-                <i class="fa fa-user-o" aria-hidden="true"></i>
-            </button>
-        </div>--}}
-    </nav>
+            <div class="row-botoom">
+                <div class="primary-menu">
+                    <ul id="menu" class="hidden-xs hidden-sm responsive-menu">
+                        <li class="first active"><a href="#">Новостройки</a></li>
+                        <li><a href="#">Застройщики</a></li>
+                        <li><a href="#">Спецпредложения</a></li>
+                        <li><a href="#">Аналитика</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>
 <!-- Main Page -->
 <main>

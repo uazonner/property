@@ -1,6 +1,6 @@
 /* Selectors */
 
-var navigation = ".navigation ul";
+var navigation = ".primary-menu";
 var toogleMenu = "#toggle-menu";
 var tracker = "nav .tracker";
 var slickNav = ".slicknav_menu";
@@ -17,26 +17,26 @@ function init() {
 
     /* < 320 PX Responsive */
     if (isMobile(true)) {
-        hideTracker();
+
     } else {
-        showTracker();
+
     }
 }
 
 function hideTracker() {
     $( tracker ).hide();
-    $( toogleMenu ).css({
+/*    $( toogleMenu ).css({
         "text-align": "center",
         "float": "none"
-    });
+    });*/
 }
 
 function showTracker() {
     $( tracker ).show();
-    $( toogleMenu ).css({
+/*    $( toogleMenu ).css({
         "text-align": "center",
         "float": "right"
-    });
+    });*/
 }
 
 function isMobile(isMin) {
@@ -48,13 +48,13 @@ function isMobile(isMin) {
 }
 
 function setMenuAttr() {
-    $(navigation).hide();
+    /*$( navigation ).hide();*/
     $( slickNav ).show();
 }
 
 function resetMenuAttr() {
     $( slickNav ).hide();
-    $(navigation).show();
+ /*   $( navigation ).show();*/
 }
 
 $( document ).ready(function() {
@@ -68,7 +68,7 @@ $( document ).ready(function() {
 
     $( menu ).slicknav({
         label: '',
-        prependTo:'.navigation',
+        prependTo: '.primary-menu',
         duration: 500,
         duplicate: true
     });

@@ -12,18 +12,15 @@ header {
     width: 100%;
 }
 
-header .header {
-    float: left;
-}
-
 header .site-info {
     width: 170px;
+    float: left;
 }
 
 header .slogan {
     color: green;
     font-size: 13px;
-    margin-top: 16px;
+    margin-top: 15px;
     text-align: center;
 }
 
@@ -47,25 +44,8 @@ header .tracker a {
     border-bottom: 1px dashed;
 }
 
-.row-top {
-    height: 60px;
-}
-.row-botoom {
-    clear: right;
-    margin-top: 6px;
-}
-
-.secondary-menu {
-    float: left;
-}
-
-.primary-menu {
-
-}
-
-.search {
-    margin-top: 20px;
-    float: right;
+nav {
+    min-height: 50px;
 }
 
 ul#menu {
@@ -100,29 +80,34 @@ ul#menu li a:after {
     background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #f5f7f8 0%, #fff 100%) repeat scroll 0 0;
 }
 
-ul#user-menu {
-    padding: 0;
+#menu-responsive {
+    clear: both;
 }
 
-ul#user-menu li {
-    float: left;
-    list-style-type: none;
-    margin: 1em 0 0;
-    padding: 0;
+.navigation {
+
 }
 
-ul#user-menu li a {
-    border-bottom: 1px solid #e4ebeb;
-    border-left: 1px solid #e4ebeb;
-    color: #597b7c;
-    display: block;
+.user-nav {
+
+}
+
+nav .slogan-mobile {
+    color: green !important;;
     font-size: 13px;
-    padding: 3px 13px;
-    text-decoration: none;
+    text-align: center;
+    margin-left: 45px;
+    display: block;
 }
 
-ul#user-menu li.first a {
-    border-left: none;
+nav .site-name-mobile {
+    color: #005984;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 45px;
+    display: block;
 }
 
 .slicknav_menu {
@@ -198,9 +183,6 @@ a:hover {
 }
 
 @media only screen and (min-device-width : 1px) and (max-device-width : 319px) {
-    header .tracker {
-        display: none;
-    }
 
     header .site-info {
         text-align: center;
@@ -218,7 +200,7 @@ a:hover {
     border-radius: 0 !important;
     border: 1px solid #005984 !important;
     color: #005984;
-    margin: 10px 10px 14px !important;
+    margin: 9px 10px 17px !important;
 }
 
 .slicknav_icon-bar {
