@@ -219,7 +219,7 @@ main .content {
 }
 
 .alert-info {
-    background-image: url("../images/icons/info.png") !important;
+    background-image: url("../images/icons/message-24-info.png") !important;
     background-position: 8px 8px;
     background-repeat: no-repeat !important;
     background-color: #f8fff0 !important;
