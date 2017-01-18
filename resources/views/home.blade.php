@@ -25,27 +25,31 @@
         <div class="header">
             <div class="site-info">
                 <div class="slogan">Недвижимость Украины</div>
-                <div class="site-name"><a href="#">Real.kh.ua</a></div>
+                <div class="site-name"><a href="#">where.com.ua</a></div>
             </div>
 
             <div class="tracker">
-                <a href="#"><i class="fa fa-newspaper-o" aria-hidden="true"></i>
-                    2 Апреля 2017, 20:46
-                </a>
+                <i class="fa fa-newspaper-o" aria-hidden="true"></i> <a href="#">2 Апреля 2017, <span id="time">20:46</span></a>
             </div>
         </div>
 
         <div class="nav">
             <div class="row-top">
-                <div class="secondary-menu">
+
+                <div class="secondary-menu hidden-xs hidden-sm responsive-menu">
                     <ul id="user-menu">
                         <li class="first"><a href="#">Личный кабинет</a></li>
                         <li><a href="#">Регистрация</a></li>
                     </ul>
                 </div>
-                <div class="search hidden-xs hidden-sm responsive-menu">
-                    Здесь будет поиск
+
+                <div class="settings hidden-xs hidden-sm responsive-menu">
+                    <div class="current-city"><i class="fa fa-plus-square" aria-hidden="true"></i>
+                        <a href="#">Выбрать город</a></div>
+                    <div class="current-language"><i class="fa fa-globe" aria-hidden="true"></i>
+                        <a href="#">Русский</a></div>
                 </div>
+
             </div>
             <div class="row-botoom">
                 <div class="primary-menu">
@@ -61,13 +65,32 @@
     </div>
 </header>
 <!-- Main Page -->
+<section id="system-message">
+    <div class="container">
+        <div class="row">
+            <div class="alert alert-info">
+                  Работа в режиме обслуживания. Переключиться в рабочий режим.
+            </div>
+        </div>
+    </div>
+</section>
+<section id="filter">
+
+</section>
 <main>
     <div class="container">
-
-            <div class="col-lg-9 col-md-9 content">Центр</div>
-            <div class="col-lg-3 col-md-3 sidebar">Правый блок</div>
-
+        <div class="row">
+            <div class="col-lg-9 col-md-9 content"><h4>Centr section</h4></div>
+            <div class="col-lg-3 col-md-3 sidebar"><h4>Right section</h4></div>
+        </div>
     </div>
 </main>
+<footer id="main-footer">
+    <div class="container">
+        <p>&copy; where.com.ua, 2016 - 2017.<br>
+            Копирование и размещение материалов на других сайтах разрешается только с обратной гиперссылкой.
+        </p>
+    </div>
+</footer>
 </body>
 </html>
