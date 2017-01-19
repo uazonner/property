@@ -105,6 +105,62 @@ header .tracker a {
     padding-left: 5px;
 }
 
+.nav {
+    list-style: outside none none;
+    margin-bottom: 0;
+}
+
+.nav-tabs > li {
+    float: left;
+}
+
+.nav > li > a {
+    display: block;
+}
+
+.nav-tabs {
+    background-color: #fafafa;
+    border-right: 1px solid #e5e5e5;
+    border-top: 3px solid #e5e5e5;
+    font-size: 16px;
+}
+
+.nav-tabs li a {
+    background-color: #fafafa;
+    border-color: #e5e5e5 !important;
+    border-image: none !important;
+    border-radius: 0 !important;
+    border-style: solid none !important;
+    border-width: 3px 0 1px !important;
+    margin-top: -3px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    transition: padding 0.2s ease 0s, border-top 0.2s ease 0s !important;
+}
+
+.nav-tabs li a:hover, .nav-tabs li.active a, .nav-tabs li.active a:hover, .nav-tabs li.active a:focus {
+    color: green !important;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+}
+
+.nav-tabs li.active a {
+    background-color: #f9f9f9 !important;
+    border-top: 3px solid green !important;
+    border-bottom: 1px solid #f9f9f9 !important;
+    border-left: 1px solid #e5e5e5 !important;
+    border-right: 1px solid #e5e5e5 !important;
+}
+
+.nav-tabs li a:hover {
+    border-top: 3px solid #005984 !important;
+    color: #005984;
+}
+
+.nav-tabs li:first-child a {
+    margin-left: 0;
+}
+
 ul#menu {
     list-style-type: none;
     overflow: hidden;
@@ -194,13 +250,6 @@ ul.slicknav_nav li a:after {
     border-radius: 0 !important;
 }
 
-main .sidebar {
-    background-color: lightgrey;
-    height: 400px;
-    text-align: center;
-    padding: 10px;
-}
-
 main .content {
     text-align: center;
     padding: 10px;
@@ -242,6 +291,37 @@ a:focus, a:hover {
     text-decoration: none !important;
 }
 
+/* blocks */
+
+.sidebar {
+}
+
+.block {
+    margin-bottom: 25px;
+}
+
+.block ul {
+    padding: 0;
+}
+
+.block-wraper {
+    background-color: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    overflow: hidden;
+    padding: 15px;
+}
+
+.block-wraper-with-nav {
+    background-color: #f9f9f9;
+    border-top: none;
+    border-bottom: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+    overflow: hidden;
+    padding: 15px;
+}
+
+
 
 /* Media queries */
 
@@ -280,7 +360,7 @@ a:focus, a:hover {
     border-radius: 0 !important;
     border: 1px solid #005984 !important;
     color: #005984;
-    margin: 10px 10px 14px 0 !important;
+    margin: 10px 0 14px 0 !important;
 }
 
 .slicknav_icon-bar {

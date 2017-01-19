@@ -17,7 +17,6 @@
     <script src="{!! asset('js/script.js') !!}"></script>
     <script src="{!! asset('js/bootstrap.min.js') !!}"></script>
     <script src="{!! asset('js/jquery.slicknav.min.js') !!}"></script>
-
 </head>
 <body>
 <header>
@@ -68,8 +67,10 @@
 <section id="system-message">
     <div class="container">
         <div class="row">
-            <div class="alert alert-info">
-                  Работа в режиме обслуживания. <a href="#">Переключиться в рабочий режим</a>.
+            <div class="col-md-12">
+                <div class="alert alert-info">
+                      Работа в режиме обслуживания. <a href="#">Переключиться в рабочий режим</a>.
+                </div>
             </div>
         </div>
     </div>
@@ -80,8 +81,38 @@
 <main>
     <div class="container">
         <div class="row">
-            <div class="col-lg-9 col-md-9 content"><h4>Centr section</h4></div>
-            <div class="col-lg-3 col-md-3 sidebar"><h4>Right section</h4></div>
+            <div class="col-md-8 content"><h4>Main content</h4></div>
+            <div class="col-md-4">
+                <aside class="sidebar">
+                    <div class="block">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#" data-toggle="tab" aria-expanded="true"><i class="fa fa-star"></i></a></li>
+                            <li><a href="#" data-toggle="tab" aria-expanded="false"><i class="fa fa-folder-open"></i></a></li>
+                            <li><a href="#" data-toggle="tab" aria-expanded="false"><i class="fa fa-clock-o"></i></a></li>
+                            <li><a href="#" data-toggle="tab" aria-expanded="false"><i class="fa fa-tags"></i></a></li>
+                        </ul>
+                        <div class="block-wraper-with-nav">
+                            <div class="block-heading">
+                                <h4>Aside section #1</h4>
+                            </div>
+                            <div class="block-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atomus, appellat dedocendi omnes quoddam atomos. Vestra. Corrupti sensum multa dissentiet uberius displicet medeam, efficiatur quaeque saluto sollicitare arbitraretur conectitur chaere, deorum consiliisque arbitrer doctrina nasci. Odia malis, scipio, libido. Iudico graviter seditione hoc. Venustate.</p>
+                            </div>
+                        </div>
+                     </div>
+
+                    <div class="block">
+                        <div class="block-wraper">
+                            <div class="block-heading">
+                                <h4>Aside section #2</h4>
+                            </div>
+                            <div class="block-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atomus, appellat dedocendi omnes quoddam atomos. Vestra. Corrupti sensum multa dissentiet uberius displicet medeam, efficiatur quaeque saluto sollicitare arbitraretur conectitur chaere, deorum consiliisque arbitrer doctrina nasci. Odia malis, scipio, libido. Iudico graviter seditione hoc. Venustate.</p>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
         </div>
     </div>
 </main>
