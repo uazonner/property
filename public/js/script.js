@@ -82,6 +82,11 @@ $( document ).ready(function() {
 
     }
 
+    /* Multiselect on forms */
+
+    $( '#rooms-count' ).multiselect({
+        enableClickableOptGroups: false
+    });
     /* Timer on tracker */
 
     (function () {
