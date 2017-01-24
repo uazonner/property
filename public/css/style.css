@@ -146,14 +146,14 @@ ul.footer-menu li a {
 }
 
 .nav-tabs {
-    background-color: #fafafa;
+    background-color: #fff;
     border-right: 1px solid #eaeeee;
     border-top: 3px solid #eaeeee;
     font-size: 16px;
 }
 
 .nav-tabs li a {
-    background-color: #fafafa;
+    background-color: #fff;
     border-color: #eaeeee !important;
     border-image: none !important;
     border-radius: 0 !important;
@@ -172,9 +172,9 @@ ul.footer-menu li a {
 }
 
 .nav-tabs li.active a {
-    background-color: #f9f9f9 !important;
+    background-color: #fff;
     border-top: 3px solid green !important;
-    border-bottom: 1px solid #f9f9f9 !important;
+    border-bottom: 1px solid #fff !important;
     border-left: 1px solid #eaeeee !important;
     border-right: 1px solid #eaeeee !important;
 }
@@ -388,21 +388,12 @@ select {
 }
 
 .select-where:after {
-    content: '<>';
-    font: 17px "Consolas", monospace;
+    content: '\25BC';
     color: #ccc;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
-    right: 15px;
-    /*Adjust for position however you want*/
-
+    right: 25px;
     top: 7px;
-    /*left line */
-
     position: absolute;
-    pointer-events: none;
+    top: 7px;
 }
 
 .separator {
@@ -469,7 +460,7 @@ a:focus, a:hover {
 }
 
 .block-wraper-with-nav {
-    background-color: #f9f9f9;
+    background-color: #fff;
     border-top: none;
     border-bottom: 1px solid #eaeeee;
     border-right: 1px solid #eaeeee;
