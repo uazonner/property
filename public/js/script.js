@@ -82,23 +82,22 @@ $( document ).ready(function() {
 
     }
 
-    // Sumoselect
+    /* Sumoselect Filters */
 
-    $('#ads-type').SumoSelect({
-        placeholder: 'Тип объявления',
-        csvDispCount: 3
+    $('#filterOperation').SumoSelect({
+        placeholder: 'Тип объявления'
     });
 
-    $('#realty-type').SumoSelect({
-        placeholder: 'Тип недвижимости',
-        csvDispCount: 3
+    $('#filterRealtyType').SumoSelect({
+        placeholder: 'Тип недвижимости'
     });
 
+    $('#filterRooms').SumoSelect({
+        placeholder: 'Комнат'
+    });
 
-
-    $('#rooms-quantity').SumoSelect({
-        placeholder: 'Количество комнат',
-        csvDispCount: 3
+    $('#filterRegion').SumoSelect({
+        placeholder: 'Район'
     });
 
 /*    /!* Multiselect on forms *!/

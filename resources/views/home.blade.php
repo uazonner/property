@@ -88,44 +88,68 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="search-property">
-                    <h2 class="right-line">Поиск недвижимости: Харьков</h2>
-
+                    <h2 class="right-line">Поиск недвижимости: <a href="#">Харьков</a></h2>
                     <form class="basic-form">
-                        <div class="row">
-                            <div class="col-md-2">
-                                <div class="select-where">
-                                    <select id="ads-type" title="Тип" name="ads-type" class="form-control">
-                                        <option value="0" selected>Купить</option>
-                                        <option value="1">Снять</option>
-                                    </select>
+                        <div class="main-filters">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <div class="select-where">
+                                        <select id="filterOperation" title="Тип" name="filterOperatione" class="form-control">
+                                            <option value="0" selected>Купить</option>
+                                            <option value="1">Снять</option>
+                                        </select>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="select-where">
-                                    <select id="realty-type" title="Тип недвижимости" name="realty-type" class="form-control">
-                                        <option value="0" selected>Квартиру</option>
-                                        <option value="1">Комнату</option>
-                                        <option value="2">Дом</option>
-                                        <option value="3">Участок</option>
-                                    </select>
+                                <div class="col-md-2">
+                                    <div class="select-where">
+                                        <select id="filterRealtyType" title="Тип недвижимости" name="filterRealtyType" class="form-control">
+                                            <option value="0" selected>Квартиру</option>
+                                            <option value="1">Комнату</option>
+                                            <option value="2">Дом</option>
+                                            <option value="3">Участок</option>
+                                        </select>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="select-where">
-                                    <select id="rooms-quantity" multiple="multiple" title="Комнаты" name="rooms-quantity" class="form-control">
-                                        <option value="1" selected >Студия</option>
-                                        <option value="2">Одна</option>
-                                        <option value="3">Две</option>
-                                        <option value="4">Три</option>
-                                        <option value="5">Четыре</option>
-                                        <option value="6">Пять и более</option>
-                                        <option value="7">Свободная планировка</option>
-                                    </select>
+                                <div class="col-md-2">
+                                    <div class="select-where">
+                                        <select id="filterRooms" multiple="multiple" title="Комнаты" name="filterRooms" class="form-control">
+                                            <option value="1" selected >Студия</option>
+                                            <option value="2">Одна</option>
+                                            <option value="3">Две</option>
+                                            <option value="4">Три</option>
+                                            <option value="5">Четыре</option>
+                                            <option value="6">Пять +</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="select-where">
+                                        <select id="filterRegion" multiple="multiple" title="Район" name="filterRegion" class="form-control">
+                                            <option value="1">Студия</option>
+                                            <option value="2">Одна</option>
+                                            <option value="3">Две</option>
+                                            <option value="4">Три</option>
+                                            <option value="5">Четыре</option>
+                                            <option value="6">Дзержинский район пять+</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <input id="filterID" type="text" class="form-control" placeholder="ID">
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <br>
-                        <button type="submit" class="btn btn-primary">Найти</button>
+
+                        <div class="additional-filters">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <button type="submit" class="btn btn-primary">Найти</button>
+                                </div>
+                            </div>
+                        </div>
                     </form>
 
 

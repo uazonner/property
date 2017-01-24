@@ -375,9 +375,29 @@ main .content {
     float: right;
 }
 
-/* IE11 hide native button (thanks Matt!) */
-select::-ms-expand {
-    display: none;
+.SumoSelect > .CaptionCont {
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #666;
+    display: block;
+    font-size: 14px;
+    height: 34px;
+    line-height: 1.42857;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    width: 100%;
+}
+
+.SumoSelect > .CaptionCont > label > i {
+    top: 5px;
+}
+
+.form-control::-moz-placeholder {
+    color: #666;
+    font-size: 13px;
 }
 
 .separator {
@@ -399,6 +419,23 @@ select::-ms-expand {
 
 h2 {
     font-size: 22px !important;
+}
+
+label {
+    font-weight: normal;
+}
+
+.SumoSelect > .CaptionCont > span.placeholder {
+    font-style: normal;
+    color: #333;
+}
+
+.SumoSelect > .optWrapper > .options {
+    border-radius: 0;
+}
+
+.additional-filters {
+    margin-top: 25px;
 }
 
 /* Titles */
