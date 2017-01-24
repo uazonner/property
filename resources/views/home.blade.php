@@ -13,7 +13,8 @@
     <link rel="stylesheet" type="text/css" href="{!! asset('css/prosto-forms.min.css') !!}" />--}}
     <link rel="stylesheet" type="text/css" href="{!! asset('css/font-awesome.min.css') !!}" />
     <link rel="stylesheet" type="text/css" href="{!! asset('css/slicknav.css') !!}" />
-    <link rel="stylesheet" type="text/css" href="{!! asset('css/bootstrap-multiselect.css') !!}" />
+{{--    <link rel="stylesheet" type="text/css" href="{!! asset('css/bootstrap-multiselect.css') !!}" />--}}
+    <link rel="stylesheet" type="text/css" href="{!! asset('css/sumoselect.css') !!}" />
     <link rel="stylesheet" type="text/css" href="{!! asset('css/style.css') !!}" />
 
 
@@ -21,7 +22,8 @@
     <script src="{!! asset('js/script.js') !!}"></script>
     <script src="{!! asset('js/bootstrap.min.js') !!}"></script>
     <script src="{!! asset('js/jquery.slicknav.min.js') !!}"></script>
-    <script src="{!! asset('js/bootstrap-multiselect.js') !!}"></script>
+{{--    <script src="{!! asset('js/bootstrap-multiselect.js') !!}"></script>--}}
+    <script src="{!! asset('js/jquery.sumoselect.min.js') !!}"></script>
 
 </head>
 <body>
@@ -63,7 +65,6 @@
                         <li><a href="#">Новостройки</a></li>
                         <li><a href="#">Застройщики</a></li>
                         <li><a href="#">Спецпредложения</a></li>
-                        <li><a href="#">Еще</a></li>
                     </ul>
                 </div>
             </div>
@@ -93,7 +94,7 @@
                         <div class="row">
                             <div class="col-md-2">
                                 <div class="select-where">
-                                    <select title="Тип" name="ads-type" class="form-control">
+                                    <select id="ads-type" title="Тип" name="ads-type" class="form-control">
                                         <option value="0" selected>Купить</option>
                                         <option value="1">Снять</option>
                                     </select>
@@ -101,7 +102,7 @@
                             </div>
                             <div class="col-md-2">
                                 <div class="select-where">
-                                    <select id="rooms-count" multiple="multiple" title="Тип недвижимости" name="type" class="form-control">
+                                    <select id="realty-type" title="Тип недвижимости" name="realty-type" class="form-control">
                                         <option value="0" selected>Квартиру</option>
                                         <option value="1">Комнату</option>
                                         <option value="2">Дом</option>
@@ -111,9 +112,8 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="select-where">
-                                    <select title="Комнаты" name="rooms" class="form-control">
-                                        <option value="0" selected disabled>Комнат</option>
-                                        <option value="1">Студия</option>
+                                    <select id="rooms-quantity" multiple="multiple" title="Комнаты" name="rooms-quantity" class="form-control">
+                                        <option value="1" selected >Студия</option>
                                         <option value="2">Одна</option>
                                         <option value="3">Две</option>
                                         <option value="4">Три</option>

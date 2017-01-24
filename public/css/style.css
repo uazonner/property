@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic&subset=cyrillic-ext,latin);
+
 body {
     color: #666 !important;
     font-family: "Open Sans", "Nimbus Sans L", sans-serif !important;
@@ -317,6 +318,10 @@ main .content {
     padding: 5px;
 }
 
+.SumoSelect {
+    width: auto;
+    display: block;
+}
 /* Messages */
 
 #system-message {
@@ -373,27 +378,6 @@ main .content {
 /* IE11 hide native button (thanks Matt!) */
 select::-ms-expand {
     display: none;
-}
-
-select {
-
-    /* reset */
-
-    margin: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-}
-
-.select-where:after {
-    content: '\25BC';
-    color: #ccc;
-    right: 25px;
-    top: 7px;
-    position: absolute;
-    top: 7px;
 }
 
 .separator {

@@ -82,11 +82,30 @@ $( document ).ready(function() {
 
     }
 
-    /* Multiselect on forms */
+    // Sumoselect
+
+    $('#ads-type').SumoSelect({
+        placeholder: 'Тип объявления',
+        csvDispCount: 3
+    });
+
+    $('#realty-type').SumoSelect({
+        placeholder: 'Тип недвижимости',
+        csvDispCount: 3
+    });
+
+
+
+    $('#rooms-quantity').SumoSelect({
+        placeholder: 'Количество комнат',
+        csvDispCount: 3
+    });
+
+/*    /!* Multiselect on forms *!/
 
     $( '#rooms-count' ).multiselect({
         enableClickableOptGroups: false
-    });
+    });*/
     /* Timer on tracker */
 
     (function () {
